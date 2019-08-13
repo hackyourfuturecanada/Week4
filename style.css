@@ -1,0 +1,44 @@
+/*ul#grid-floats li:not(:first-child) {*/
+/*    float: left;*/
+/*    width: 50%;*/
+/*}*/
+
+/*li.grid-item:not(:first-child) img {*/
+/*    width: 50%;*/
+/*}*/
+
+/*#grid-floats li:first-child img {*/
+/*    width: 100%;*/
+/*}*/
+* {
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+li {
+    list-style-type: none;
+}
+
+section {
+    width: 100%;
+}
+
+ul#grid-floats li:not(:nth-child(-n+2)) {
+    float: left;
+    width: 31%;
+    height: 40vh;
+    margin-bottom: 10vh;
+}
+
+li.grid-item:not(:nth-child(-n+2)) img {
+    width: 50%;
+}
+
+#grid-floats li:nth-child(-n+2) {
+    float: left;
+    width: 50%;
+}
+
+#grid-floats li:nth-child(-n+2) img {
+    width: 50%;
+}
