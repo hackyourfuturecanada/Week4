@@ -1,0 +1,61 @@
+img{
+     width: 200px;
+}
+ body{
+     background-color: #e9cea7;
+     margin: 0px;
+     position: 0px;
+     font-family: 'Maven Pro', sans-serif;
+}
+ h1,h2{
+     text-align: center;
+     margin: 40px;
+     clear: both;
+}
+ h3{
+     color: #725707;
+}
+ #grid-floats {
+     text-align: center;
+}
+ li{
+}
+ #grid-floats > .grid-item{
+     float: left;
+     width: 20vw;
+     height: 20vw;
+}
+ h2{
+     clear: both;
+}
+/** modify the size of first li in the grid **/
+ #grid-floats> li:first-child{
+     width: 43vw;
+}
+ #grid-flex{
+     clear: both;
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+}
+/** target all the itmes inside the id grid-flex**/
+ #grid-flex > .grid-item{
+}
+ .grid-item{
+     background-color: white;
+     text-align: center;
+     margin:1em;
+     box-shadow: 10px 10px 5px 0px rgba(158, 158, 158, 0.14);
+     color: gray;
+     padding: 32px 10px;
+     border-radius: 20px;
+     width: 20vw;
+     height: 20vw;
+}
+/** removes the dots from li itmes**/
+ ul{
+     list-style-type: none;
+}
+ p{
+     font-size: 0.9em;
+}
