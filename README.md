@@ -14,3 +14,5 @@
   - How about some nice colors, fonts?
   - According to the grid specification, some products are bigger than others. Maybe these are "highlighted" products, so the rest of the styling could also be different.
 - Read the [style guide](https://www.w3schools.com/html/html5_syntax.asp) and check your files
+
+![Layout](https://user-images.githubusercontent.com/1719156/62662582-8c0aaa00-b942-11e9-9a59-e76f88466896.png)
