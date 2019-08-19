@@ -1,0 +1,127 @@
+* {
+  list-style: none;
+}
+
+body {
+  background-color: rgba(255, 255, 233, 0.445);
+}
+h1,
+h2 {
+  text-align: center;
+  padding: 10px;
+}
+img {
+  max-width: 100%;
+  max-height: 300px;
+}
+
+/* ------------  GRID  -------vv-------- */
+
+#grid-floats {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  background-color: #2196f3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.grid-item:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  flex: 100%;
+  max-width: 100%;
+}
+
+/* ------------ FLEX  --------------- */
+
+#grid-flex {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #2196f3;
+  justify-content: flex-start;
+}
+
+#grid-flex .grid-item {
+  flex: 1 100%;
+  margin: 10px;
+  max-width: 42%;
+}
+
+#grid-flex .grid-item:nth-child(1) {
+  flex: 1 100%;
+  min-width: 90%;
+}
+
+@media only screen and (min-width: 769px) {
+  #grid-floats {
+    grid-template-columns: auto auto auto;
+  }
+
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .grid-item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .grid-item:nth-child(2) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  #grid-flex .grid-item {
+    margin: 10px;
+    min-width: 25%;
+  }
+
+  #grid-flex .grid-item:nth-child(1) {
+    flex: 1 45%;
+  }
+
+  #grid-flex .grid-item:nth-child(2) {
+    flex: 1 45%;
+  }
+}
+
+@media only screen and (min-width: 1023px) {
+  #grid-floats {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .grid-item:nth-child(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .grid-item:nth-child(2) {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  #grid-flex .grid-item {
+    margin: 10px;
+    min-width: 21%;
+    max-width: 25%;
+  }
+
+  #grid-flex .grid-item:nth-child(1) {
+    flex: 0.5 45%;
+    max-width: 25%;
+  }
+
+  #grid-flex .grid-item:nth-child(2) {
+    flex: 1 20%;
+    max-width: 25%;
+  }
+}
