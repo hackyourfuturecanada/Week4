@@ -1,0 +1,145 @@
+
+/* Mobile Phones*/
+@media(max-width: 768px) {
+  header {
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(193, 66, 66, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px 10px 10px 10px;
+  }
+  h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    text-align: center;
+  }
+  h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 15px;
+  }
+  p {
+    font-family: 'Special Elite', cursive;
+    font-size: 15px;
+  }
+  img {
+    width: 100%;
+    float: top;
+  }
+  #grid-floats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  .grid-item {
+    background-color: rgba(193, 66, 66, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 13px;
+  }
+}
+/* Tablets */
+@media(min-width: 769px) and (max-width: 1023px) {
+  header {
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(193, 66, 66, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px 10px 10px 10px;
+  }
+  h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    text-align: center;
+  }
+  h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 15px;
+  }
+  p {
+    font-family: 'Special Elite', cursive;
+    font-size: 15px;
+  }
+  img {
+    width: 100%;
+    float: top;
+  }
+  #grid-floats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  .grid-item {
+    background-color: rgba(193, 66, 66, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 13px;
+  }
+}
+/* Desktops */
+@media(min-width: 1024px) {
+  header {
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(193, 66, 66, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px 10px 10px 10px;
+  }
+  h2 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 20px;
+    text-align: center;
+  }
+  h3 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 15px;
+  }
+  p {
+    font-family: 'Special Elite', cursive;
+    font-size: 15px;
+  }
+  img {
+    width: 100%;
+    float: top;
+  }
+  #grid-floats {
+    display: grid;
+    grid-template-columns: [outer-start] 1fr [center-start] 1fr [center-end] 1fr [outer-end] 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  .grid-item {
+    background-color: rgba(193, 66, 66, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 13px;
+  }
+  .item-a {
+    grid-column: outer-start / center-end;
+  }
+}
